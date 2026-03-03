@@ -233,11 +233,7 @@ npm start
 ## 📸 Скриншоты
 
 ### Каталог настольных игр
-![Каталог]<img width="1919" height="1075" alt="Снимок экрана 2026-03-03 172724" src="https://github.com/user-attachments/assets/a3ff600e-c9cb-4cef-87be-e7a96ae1b18f" />
-
-
-
-
+Каталог<img width="1919" height="1075" alt="Снимок экрана 2026-03-03 172724" src="https://github.com/user-attachments/assets/a3ff600e-c9cb-4cef-87be-e7a96ae1b18f" />
 ### Добавление игры
 ![Добавление](./screenshots/screenshot-add.jpg)
 
