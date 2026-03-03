@@ -233,19 +233,15 @@ npm start
 ## 📸 Скриншоты
 
 ### Каталог настольных игр
-Каталог<img width="1919" height="1075" alt="Снимок экрана 2026-03-03 172724" src="https://github.com/user-attachments/assets/a3ff600e-c9cb-4cef-87be-e7a96ae1b18f" />
+<img width="1919" height="1075" alt="Снимок экрана 2026-03-03 172724" src="https://github.com/user-attachments/assets/a3ff600e-c9cb-4cef-87be-e7a96ae1b18f" />
 ### Добавление игры
-![Добавление](./screenshots/screenshot-add.jpg)
-
+<img width="1919" height="1017" alt="Снимок экрана 2026-03-03 173257" src="https://github.com/user-attachments/assets/3b002fde-ba75-4462-b87d-9d87f7d0ea81" />
 ### Редактирование игры
-![Редактирование](./screenshots/screenshot-edit.jpg)
-
+<img width="1888" height="968" alt="Снимок экрана 2026-03-03 173356" src="https://github.com/user-attachments/assets/0b7a0ce0-9214-4ddc-8a00-2e9515f1623c" />
 ### Swagger UI — список маршрутов
-![Swagger UI](./screenshots/screenshot-swagger.jpg)
-
+<img width="1912" height="1015" alt="Снимок экрана 2026-03-03 173435" src="https://github.com/user-attachments/assets/df4a1083-0033-4649-ba3b-79b866dab017" />
 ### Swagger UI — тестирование GET /api/games
-![Swagger Try it out](./screenshots/screenshot-swagger-try.jpg)
-
+<img width="1919" height="868" alt="Снимок экрана 2026-03-03 173709" src="https://github.com/user-attachments/assets/01664bea-c02d-4685-8590-add54c31e5b0" />
 ---
 
 ## 🚀 Быстрый старт (итоговый проект)
