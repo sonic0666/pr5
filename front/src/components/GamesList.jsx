@@ -6,7 +6,7 @@ export default function GamesList({ games, onEdit, onDelete }) {
     return <div className="empty">Товаров пока нет</div>;
   }
   return (
-    <div className="list">
+    <div className="gameGrid">
       {games.map((g) => (
         <GameItem key={g.id} game={g} onEdit={onEdit} onDelete={onDelete} />
       ))}

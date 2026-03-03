@@ -1,3 +1,4 @@
+import './GamesPage.css';
 import React, { useEffect, useState } from 'react';
 import './GamesPage.css';
 import { api } from '../../api';

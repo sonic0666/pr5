@@ -34,7 +34,7 @@ let games = [
     description: 'Карточная игра в антураже Найт-Сити — собери свою банду и захвати районы мегаполиса.',
     price: 3500,
     stock: 12,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/cyberpunk-2077-bandi-najt-siti-500x500.jpg'
+    image: 'img/958001_big.jpg'
   },
   {
     id: nanoid(6),
@@ -43,7 +43,7 @@ let games = [
     description: 'Апокалипсис настал. Кто попадёт в бункер? Убеди других, что именно ты достоин выжить.',
     price: 900,
     stock: 30,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/bunker-500x500.jpg'
+    image: 'img/igroved_bunker_1.jpg'
   },
   {
     id: nanoid(6),
@@ -52,7 +52,7 @@ let games = [
     description: 'Классика жанра — скупай недвижимость, строй дома и разори соперников.',
     price: 1800,
     stock: 25,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/monopoliya-500x500.jpg'
+    image: 'img/skvkBcQqBoKTAUkdCGmTEC0u8G48UQ8xSbejZMWwDTs=.jpeg'
   },
   {
     id: nanoid(6),
@@ -61,7 +61,7 @@ let games = [
     description: 'Исследуй остров Катан, торгуй ресурсами и строй поселения быстрее соперников.',
     price: 2500,
     stock: 15,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/catan-500x500.jpg'
+    image: 'img/catan-00-1024x1024-wm.jpg'
   },
   {
     id: nanoid(6),
@@ -70,7 +70,7 @@ let games = [
     description: 'Весёлая карточная игра — угадывай профессию и обстоятельства гибели загадочного мужика.',
     price: 700,
     stock: 40,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/umer-muzhik-500x500.jpg'
+    image: 'img/umer-muzhik-00.jpg'
   },
   {
     id: nanoid(6),
@@ -79,7 +79,7 @@ let games = [
     description: 'Исследуй постапокалиптическую пустошь, выполняй квесты и сражайся с мутантами.',
     price: 5500,
     stock: 7,
-    image: './back/img/Fallout_3D_roznica-1000x416-wm.webp'
+    image: 'img/fallout_01.jpg'
   },
   {
     id: nanoid(6),
@@ -88,7 +88,7 @@ let games = [
     description: 'Быстрая карточная игра для всей семьи — избавься от карт первым и не забудь крикнуть УНО!',
     price: 500,
     stock: 50,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/uno-500x500.jpg'
+    image: 'img/uno-uno_01.jpg'
   },
   {
     id: nanoid(6),
@@ -97,7 +97,7 @@ let games = [
     description: 'Классическая ролевая игра — мирные жители против мафии. Кто кого перехитрит?',
     price: 600,
     stock: 35,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/mafiya-500x500.jpg'
+    image: 'img/i740941.jpg'
   },
   {
     id: nanoid(6),
@@ -106,7 +106,7 @@ let games = [
     description: 'Придумывай ассоциации к картинкам и угадывай чужие — игра на воображение и креативность.',
     price: 1900,
     stock: 22,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/imaginarium-500x500.jpg'
+    image: 'img/nastolnaya_igra_imadjinarium_new_year.jpg'
   },
   {
     id: nanoid(6),
@@ -115,7 +115,7 @@ let games = [
     description: 'Объясняй слова жестами, словами или рисунком — кто быстрее угадает?',
     price: 1200,
     stock: 28,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/ekvivoki-500x500.jpg'
+    image: 'img/6048499841.jpg'
   },
   {
     id: nanoid(6),
@@ -124,7 +124,7 @@ let games = [
     description: 'Вытаскивай блоки из башни и ставь наверх — не урони башню!',
     price: 1100,
     stock: 20,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/dzhenga-500x500.jpg'
+    image: 'img/1.webp'
   },
   {
     id: nanoid(6),
@@ -133,7 +133,7 @@ let games = [
     description: 'Безумная карточная игра — избегай взрывных котят и подставляй соперников.',
     price: 1400,
     stock: 33,
-    image: 'https://hobbygames.ru/image/cache/catalog/games/vzryvnye-kotyata-500x500.jpg'
+    image: 'img/photo.jpg'
   },
 ];
 
@@ -231,7 +231,7 @@ app.get('/api/games', (req, res) => {
 
 /**
  * @swagger
- * /api/games/{id}:
+ * /api/games/{id}: 
  *   get:
  *     summary: Получает игру по ID
  *     tags: [Games]
