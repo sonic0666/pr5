@@ -172,6 +172,7 @@ npm install
 npm start
 ```
 Сервер: `http://localhost:3000`
+<img width="1308" height="718" alt="image" src="https://github.com/user-attachments/assets/78b1e44e-ba7f-4447-9989-8382e19d1c39" />
 
 ---
 
