@@ -187,9 +187,10 @@ npm start
 ```
 2. Открыть Postman
 3. Выполнить запросы на `http://localhost:3000/api/games`
----
+
 Cсылка на репозиторий со скриншотами :
 https://github.com/sonic0666/pr3
+---
 # ✅ Практика 4 — React + Express (Game Shop)
 
 ## Цель
