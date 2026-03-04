@@ -5,16 +5,72 @@
 **Тема индивидуального задания: Настольные игры.**
 
 ---
+## 📁 Структура проекта
 
-## 📁 Структура репозитория
+```
+PRACTIC4/
+├── back/                      # Express-сервер (REST API)
+│   ├── node_modules/
+│   ├── app.js                 # Точка входа: настройка Express, маршруты, middleware
+│   ├── package.json
+│   └── package-lock.json
+│
+└── front/                     # React-клиент
+    ├── node_modules/
+    ├── public/
+    │   ├── img/               # Статичные изображения игр
+    │   └── index.html         # HTML-шаблон приложения
+    └── src/
+        ├── api/
+        │   └── index.js       # Функции запросов к серверу (fetch/axios)
+        ├── components/
+        │   ├── GameItem.jsx    # Карточка одной игры (название, цена, кнопки)
+        │   ├── GameModal.jsx   # Модальное окно: форма добавления/редактирования
+        │   └── GamesList.jsx   # Список всех карточек игр
+        ├── pages/
+        │   ├── GamesPage.jsx   # Главная страница каталога
+        │   └── GamesPage.css   # Стили страницы
+        ├── App.js              # Корневой компонент, роутинг
+        ├── index.js            # Точка входа React
+        └── index.css           # Глобальные стили
+```
+| Файл                         | Назначение                                            |
+| ---------------------------- | ----------------------------------------------------- |
+| back/app.js                  | Express-сервер, CRUD-эндпоинты /api/games             |
+| src/api/index.js             | Все HTTP-запросы к серверу (GET, POST, PATCH, DELETE) |
+| src/components/GameItem.jsx  | Карточка игры с кнопками «Изменить» / «Удалить»       |
+| src/components/GameModal.jsx | Форма в модальном окне для создания и редактирования  |
+| src/components/GamesList.jsx | Рендер списка карточек, передача пропсов              |
+| src/pages/GamesPage.jsx      | Главная страница: хранит состояние, управляет логикой |
 
-| Папка | Что внутри | Результат |
-|---|---|---|
-| `practice-01` | Sass (SCSS), HTML | Карточки настольных игр |
-| `practice-02` | Express API (CRUD) | Сервер с эндпоинтами для игр |
-| `` | Postman скриншоты | Проверка CRUD и работа с JSON |
-| `practice-04` | React + Express | Магазин настольных игр (CRUD через UI) |
+## 🚀 Как запустить
 
+### 1. Запустить сервер
+```bash
+cd back
+npm install
+npm start
+```
+Сервер запустится на `http://localhost:3000`
+
+### 2. Запустить клиент (в новом терминале)
+```bash
+cd front
+npm install
+npm start
+```
+Клиент запустится на `http://localhost:3001`
+
+### 3. Открыть в браузере
+```
+http://localhost:3001
+```
+## 🔗 Адреса
+
+| URL | Описание |
+|---|---|
+| `http://localhost:3000/api/games` | REST API — список всех игр (JSON) |
+| `http://localhost:3000/api-docs` | Swagger UI (документация API) |
 ---
 
 ## 🧰 Технологии
@@ -40,19 +96,61 @@
 # ✅ Практика 1 — CSS-препроцессор (Sass)
 
 Карточки настольных игр с использованием Sass: переменные, миксины, вложенность, `@if`, `@each`.
+## ✨ Реализованные возможности SASS
 
+### 1️⃣ Переменные
+```scss
+$primary: #3498db;     // Основной цвет
+$theme: dark;          // Тема оформления
+```
+
+### 2️⃣ Миксин для кнопки
+```scss
+@mixin button($color) {
+  padding: 10px 18px;
+  background: $color;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+```
+
+### 3️⃣ Вложенность (BEM)
+```scss
+.card {
+  &__image { ... }
+  &__body { ... }
+  &__title { ... }
+  &__btn {
+    @include button($primary);
+  }
+}
+```
 ```bash
 cd -1--main
 npm install
 npm run sass
 ```
-Открыть `src/index.html` в браузере.
+Как открыть проект:
+1. Открыть папку проекта в VS Code
+2. Кликнуть правой кнопкой на `index.html`
 
----
+Страница откроется в браузере по адресу:
+http://127.0.0.1:5500/index.html
+
+<img width="1786" height="962" alt="image" src="https://github.com/user-attachments/assets/6380edde-f5f8-48d5-b5dd-1f490a1b191e" />
 
 # ✅ Практика 2 — Node.js + Express REST API
 
 CRUD-сервер для настольных игр.
+## 📦 Модель данных (Game)
+
+| Поле | Тип | Описание |
+|---|---|---|
+| `id` | number | Уникальный идентификатор  |
+| `name` | string | Название игры |
+| `price` | number | Стоимость в рублях |
 
 | Метод | Путь | Описание |
 |---|---|---|
@@ -120,6 +218,10 @@ npm start
 Клиент: `http://localhost:3001`
 
 ---
+<img width="1916" height="1063" alt="Снимок экрана 2026-02-28 100814" src="https://github.com/user-attachments/assets/0ec6b3a4-271b-43ae-b544-d3a91c62d0ff" />
+<img width="1906" height="1085" alt="Снимок экрана 2026-02-28 100827" src="https://github.com/user-attachments/assets/c74d6cc8-92ce-438b-bfe8-f1d5722d6305" />
+<img width="1919" height="1069" alt="Снимок экрана 2026-02-28 100838" src="https://github.com/user-attachments/assets/6ba41de2-70bd-445f-af1e-7f5fb19cf2db" />
+<img width="1919" height="980" alt="Снимок экрана 2026-02-28 100941" src="https://github.com/user-attachments/assets/86c07c77-14a7-4a1f-a134-673e717ef50b" />
 
 # ✅ Практика 5 — Swagger документация
 
@@ -143,7 +245,16 @@ npm install
 npm start
 ```
 Swagger UI: `http://localhost:3000/api-docs`
-
+### Каталог настольных игр
+<img width="1919" height="1075" alt="Снимок экрана 2026-03-03 172724" src="https://github.com/user-attachments/assets/a3ff600e-c9cb-4cef-87be-e7a96ae1b18f" />
+### Добавление игры
+<img width="1919" height="1017" alt="Снимок экрана 2026-03-03 173257" src="https://github.com/user-attachments/assets/3b002fde-ba75-4462-b87d-9d87f7d0ea81" />
+### Редактирование игры
+<img width="1888" height="968" alt="Снимок экрана 2026-03-03 173356" src="https://github.com/user-attachments/assets/0b7a0ce0-9214-4ddc-8a00-2e9515f1623c" />
+### Swagger UI — список маршрутов
+<img width="1912" height="1015" alt="Снимок экрана 2026-03-03 173435" src="https://github.com/user-attachments/assets/df4a1083-0033-4649-ba3b-79b866dab017" />
+### Swagger UI — тестирование GET /api/games
+<img width="1919" height="868" alt="Снимок экрана 2026-03-03 173709" src="https://github.com/user-attachments/assets/01664bea-c02d-4685-8590-add54c31e5b0" />
 ---
 
 # ⭐ Практика 6 — Итоговый проект
@@ -239,21 +350,7 @@ npm start
 | `http://localhost:3000/api/games` | REST API (JSON) |
 | `http://localhost:3000/api-docs` | Swagger UI (документация) |
 
----
 
-## 📸 Скриншоты
-
-### Каталог настольных игр
-<img width="1919" height="1075" alt="Снимок экрана 2026-03-03 172724" src="https://github.com/user-attachments/assets/a3ff600e-c9cb-4cef-87be-e7a96ae1b18f" />
-### Добавление игры
-<img width="1919" height="1017" alt="Снимок экрана 2026-03-03 173257" src="https://github.com/user-attachments/assets/3b002fde-ba75-4462-b87d-9d87f7d0ea81" />
-### Редактирование игры
-<img width="1888" height="968" alt="Снимок экрана 2026-03-03 173356" src="https://github.com/user-attachments/assets/0b7a0ce0-9214-4ddc-8a00-2e9515f1623c" />
-### Swagger UI — список маршрутов
-<img width="1912" height="1015" alt="Снимок экрана 2026-03-03 173435" src="https://github.com/user-attachments/assets/df4a1083-0033-4649-ba3b-79b866dab017" />
-### Swagger UI — тестирование GET /api/games
-<img width="1919" height="868" alt="Снимок экрана 2026-03-03 173709" src="https://github.com/user-attachments/assets/01664bea-c02d-4685-8590-add54c31e5b0" />
----
 
 ## 🚀 Быстрый старт (итоговый проект)
 
