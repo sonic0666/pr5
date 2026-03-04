@@ -221,7 +221,8 @@ npm start
 <img width="1916" height="1063" alt="Снимок экрана 2026-02-28 100814" src="https://github.com/user-attachments/assets/0ec6b3a4-271b-43ae-b544-d3a91c62d0ff" />
 <img width="1906" height="1085" alt="Снимок экрана 2026-02-28 100827" src="https://github.com/user-attachments/assets/c74d6cc8-92ce-438b-bfe8-f1d5722d6305" />
 <img width="1919" height="1069" alt="Снимок экрана 2026-02-28 100838" src="https://github.com/user-attachments/assets/6ba41de2-70bd-445f-af1e-7f5fb19cf2db" />
-<img width="1919" height="980" alt="Снимок экрана 2026-02-28 100941" src="https://github.com/user-attachments/assets/86c07c77-14a7-4a1f-a134-673e717ef50b" />
+<img width="1919" height="843" alt="Снимок экрана 2026-02-28 100941" src="https://github.com/user-attachments/assets/ee849311-a1b2-47af-910f-e58900c7bc37" />
+
 
 # ✅ Практика 5 — Swagger документация
 
